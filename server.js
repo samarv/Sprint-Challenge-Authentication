@@ -11,6 +11,7 @@ const corsOptions = {
   // then pass this object to the cors() function
 };
 
+server.use(express.json());
 server.use(bodyParser.json());
 server.use(cors());
 
